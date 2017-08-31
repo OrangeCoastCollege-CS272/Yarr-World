@@ -5,21 +5,26 @@
     android:id="@+id/welcomeLinearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical"
     tools:context="edu.orangecoastcollege.cs273.sbadajoz.yarrworld.MainActivity">
 
     <TextView
         android:id="@+id/welcomeTextView"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_weight="1"
-        android:text="@string/welcome_text" />
+        android:text="@string/welcome_text"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="24sp"/>
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:layout_weight="2"
         app:srcCompat="@drawable/occpirate" />
 
     <Button
@@ -27,6 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:onClick="launchToast"
         android:text="@string/speak_button_text"
         android:textAlignment="center" />
 
